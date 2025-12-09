@@ -1,11 +1,12 @@
 package com.mayur.test;
-
+// Making connection to oracle 
 import java.sql.*;
-public class DBCon1 {
+
+public class DBCon1 implements DBInfo{
 
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","tiger");
+			Connection con = DriverManager.getConnection(url,user,pword); //"jdbc:oracle:thin:@localhost:1521:orcl","system","tiger"
 			Statement stm = con.createStatement();
 			ResultSet rs = stm.executeQuery("select * from product01");
 			
