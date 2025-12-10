@@ -1,5 +1,7 @@
 package com.mayur.test;
 import java.sql.*;
+// PS = PreparedStatement
+// Inserting values by using PreparedStatement
 import java.util.*;
 public class DBCon4 implements DBInfo {
 	public static void main(String[] args) {

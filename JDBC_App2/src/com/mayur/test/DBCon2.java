@@ -2,7 +2,7 @@ package com.mayur.test;
 
 import java.sql.*;
 import java.util.*;
-
+// Inserting Data Through java code
 public class DBCon2 {
     public static void main(String[] args) {
         try {
